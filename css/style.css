@@ -1,0 +1,23 @@
+.icon-block {
+    padding: 0 15px;
+  }
+  .icon-block .material-icons {
+      font-size: inherit;
+  }
+
+  #index-banner{
+    background-image:  url(../resources/fondoindex.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    max-width: 100%;
+  }
+
+  nav .brand-logo, nav a, nav ul a {
+    color: white;
+  }
+
+  body{
+      background-color: #e8eaf6 ;
+  }
