@@ -19,77 +19,119 @@
 </head>
 
 <body>
-
+    <!--ENCABEZADO-->
     <header>
         <div class="navbar-fixed">
             <nav class="indigo darken-4" role="navigation">
                 <div class="nav-wrapper container">
-                    <a href="#!" class="brand-logo"><i class="material-icons">hotel</i>Jack's Nana</a>
+                    <a href="index.html" class="brand-logo center truncate"><i class="material-icons">hotel</i>Jack's
+                        Nana</a>
                     <ul class="right hide-on-med-and-down">
-                        <li><a class="waves-effect waves-light btn indigo darken-3">LOG IN <i
+                        <li><a href="pages/admin.html" class="waves-effect waves-light btn indigo darken-3">LOG IN <i
                                     class="material-icons right">supervised_user_circle
                                 </i></a></li>
                     </ul>
-                    <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <a href="pages/admin.html" class="sidenav-trigger right"><i
+                            class="material-icons">supervised_user_circle</i></a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger left"><i
+                            class="material-icons">menu</i></a>
                 </div>
             </nav>
         </div>
-        <ul id="nav-mobile" class="sidenav">
-            <li><a class="waves-effect waves-light btn indigo darken-3">LOG IN <i
-                        class="material-icons right">supervised_user_circle
-                    </i></a></li>
+        <ul class="sidenav indigo lighten-5" id="mobile-demo">
+            <li><a class="waves-effect sidenav-close" href="#fondo">Interiores de lujo</a></li>
+            <li><a class="waves-effect sidenav-close" href="#second-banner">Servicios</a></li>
+            <li><a class="waves-effect sidenav-close" href="#fondo2">Las ciudades</a></li>
+            <li><a class="waves-effect sidenav-close" href="#pie">Find us</a></li>
         </ul>
     </header>
 
+    <!--BANNER PRINCIPAL-->
     <div class="section no-pad-bot" id="index-banner">
         <div class="container">
             <br><br><br><br><br><br><br>
             <h1 class="header center white-text">JACK'S NANA HOTEL & RESORT</h1>
             <div class="row center">
                 <h5 class="header col s12 light white-text">
-                        A modern calm but with a retro love</h5>
+                    A modern calm but with a retro love</h5>
             </div>
             <br><br><br><br><br><br><br>
         </div>
     </div>
 
-
+    <!--RELLENO DE CARDS-->
     <div class="container" id="fondo">
         <div class="section">
+            <h2 class="center-align">INTERIORES DE LUJO</h2>
 
-            <!--   Icon Section   -->
+            <!--CONTENIDO PROMOCIONAL-->
             <div class="row">
-                <div class="col s12 m4">
-                    <div class="icon-block">
-                        <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
-                        <h5 class="center">Speeds up development</h5>
+                <div class="col s12 m6 l4">
+                    <div class="card indigo lighten-4">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="resources/tradicion.jpg" height="400">
+                        </div>
+                        <div class="card-content indigo lighten-4">
+                            <span class="card-title activator grey-text text-darken-4">Tradicion<i
+                                    class="material-icons right">keyboard_arrow_up</i></span>
 
-                        <p class="light">We did most of the heavy lifting for you to provide a default stylings that
-                            incorporate our custom components. Additionally, we refined animations and transitions to
-                            provide a smoother experience for developers.</p>
+                        </div>
+                        <div class="card-reveal indigo lighten-4">
+                            <span class="card-title grey-text text-darken-4">Tradicion<i
+                                    class="material-icons right">keyboard_arrow_down
+                                </i></span>
+                            <p class="flow-text">Nuestra intención es lograr una mezcla de tradición con innovación. En
+                                nuestros edificios de habitaciones hemos cambiado los ascensores y los aires
+                                acondicionados. Además, tenemos un sistema de calentadores de agua con paneles solares
+                                que ayudan a ahorrar hasta 380 toneladas de CO2 al año.
+                            </p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="col s12 m4">
-                    <div class="icon-block">
-                        <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
-                        <h5 class="center">User Experience Focused</h5>
+                <div class="col s12 m6 l4">
+                    <div class="card indigo lighten-4">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="resources/familiaridad.jpg" height="400">
+                        </div>
+                        <div class="card-content indigo lighten-4">
+                            <span class="card-title activator grey-text text-darken-4">Confianza<i
+                                    class="material-icons right">keyboard_arrow_up</i></span>
 
-                        <p class="light">By utilizing elements and principles of Material Design, we were able to create
-                            a framework that incorporates components and animations that provide more feedback to users.
-                            Additionally, a single underlying responsive system across all platforms allow for a more
-                            unified user experience.</p>
+                        </div>
+                        <div class="card-reveal indigo lighten-4">
+                            <span class="card-title grey-text text-darken-4">Confianza<i
+                                    class="material-icons right">keyboard_arrow_down
+                                </i></span>
+                            <p class="flow-text">Aunque actualmente la tecnología ha permitido personalizar diferentes
+                                servicios en nuestros hoteles, el cliente sigue priorizando la atención, la amabilidad,
+                                la confianza y empatía que brinda un hotel a través de su personal.
+                            </p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="col s12 m4">
-                    <div class="icon-block">
-                        <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
-                        <h5 class="center">Easy to work with</h5>
+                <div class="col s12 m6 l4">
+                    <div class="card indigo lighten-4">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="resources/moderno.jpg" height="400">
+                        </div>
+                        <div class="card-content indigo lighten-4">
+                            <span class="card-title activator grey-text text-darken-4">Diversidad<i
+                                    class="material-icons right">keyboard_arrow_up</i></span>
 
-                        <p class="light">We have provided detailed documentation as well as specific code examples to
-                            help new users get started. We are also always open to feedback and can answer any questions
-                            a user may have about Materialize.</p>
+                        </div>
+                        <div class="card-reveal indigo lighten-4">
+                            <span class="card-title grey-text text-darken-4">Diversidad<i
+                                    class="material-icons right">keyboard_arrow_down
+                                </i></span>
+                            <p class="flow-text">Se aplicó el cuestionario de valores culturales a gerentes generales
+                                extranjeros y a sus directivos de área con el fin de indagar las diferencias y
+                                similitudes culturales. Los resultados muestran que los gerentes extranjeros tienen un
+                                mayor índice de Distancia con el Poder y Rechazo a la incertidumbre con respecto a sus
+                                directivos nacionales.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -98,40 +140,77 @@
         <br><br>
     </div>
 
-    <footer class="page-footer orange">
+    <!--BANNER SECUNDARIO-->
+    <div class="section no-pad-bot" id="second-banner">
+        <div class="container">
+            <<br><br><br><br><br>
+                <h1 class="header center white-text">DISFRUTA DE NUESTROS SERVICIOS A LA HABITACION</h1>
+                <div class="row center">
+                    <h5 class="header col s12 light white-text">
+                        Amenidades, Cortinas Black Out, Enchufes eléctricos de fácil acceso, Caja de Seguridad, entre
+                        otros.</h5>
+                </div>
+                <br><br><br><br><br>
+        </div>
+    </div>
+
+    <!--RELLENO DE CAROUSEL-->
+    <div class="container" id="fondo2">
+        <div class="section">
+            <h2 class="center-align">EN LAS PRESTIGIOSAS CIUDADES</h2>
+            <!--CONTENIDO PROMOCIONAL-->
+            <div class="row">
+                <div class="carousel">
+                    <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/400/400/city/1" width="300"
+                            height="300"></a>
+                    <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/400/400/city/2" width="300"
+                            height="300"></a>
+                    <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/400/400/city/3" width="300"
+                            height="300"></a>
+                    <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/400/400/city/4" width="300"
+                            height="300"></a>
+                    <a class="carousel-item" href="#five!"><img src="https://lorempixel.com/400/400/city/5" width="300"
+                            height="300"></a>
+                </div>
+            </div>
+
+        </div>
+        <br><br>
+    </div>
+
+    <!--PIE DE PAGINA-->
+    <footer class="page-footer indigo darken-4" id="pie">
         <div class="container">
             <div class="row">
+                <div class="col l6 s12 center-align">
+                    <h5 class="white-text">JACKS'S NANA | HOTEL & RESORT</h5>
+                    <p class="grey-text text-lighten-4">Contamos con seis hoteles y dos resort, cada una con 72
+                        habitaciones cómodamente equipadas, incluyendo dos suites: La Suite Presidente y la Suite
+                        Ambassador con más de cien metros de superficie, que seguramente sorprenderán incluso a los
+                        huéspedes más exigentes. Disponemos de 7 salas, donde llevamos ya 15 años preparando reuniones
+                        familiares y de negocios.
+                        <br>
+                        JACKS'S NANA no es sólo el edificio sino, sobre todo, su gente. Somos un equipo de
+                        profesionales, que podemos organizar todos los eventos de principio a fin.</p>
+
+                </div>
                 <div class="col l6 s12">
-                    <h5 class="white-text">Company Bio</h5>
-                    <p class="grey-text text-lighten-4">We are a team of college students working on this project like
-                        it's our full time job. Any amount would help support and continue development on this project
-                        and is greatly appreciated.</p>
-
-
-                </div>
-                <div class="col l3 s12">
-                    <h5 class="white-text">Settings</h5>
-                    <ul>
-                        <li><a class="white-text" href="#!">Link 1</a></li>
-                        <li><a class="white-text" href="#!">Link 2</a></li>
-                        <li><a class="white-text" href="#!">Link 3</a></li>
-                        <li><a class="white-text" href="#!">Link 4</a></li>
-                    </ul>
-                </div>
-                <div class="col l3 s12">
-                    <h5 class="white-text">Connect</h5>
-                    <ul>
-                        <li><a class="white-text" href="#!">Link 1</a></li>
-                        <li><a class="white-text" href="#!">Link 2</a></li>
-                        <li><a class="white-text" href="#!">Link 3</a></li>
-                        <li><a class="white-text" href="#!">Link 4</a></li>
-                    </ul>
+                    <div class="map-responsive">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d3951.961141116452!2d-72.49104063515404!3d7.899128757833809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x8e6645102f9b7269%3A0xab4b03ed6c85830e!2sUniversidad%20Francisco%20de%20Paula%20Santander%2C%20Norte%20de%20Santander!3m2!1d7.898878!2d-72.4884979!4m5!1s0x8e664511f04eac01%3A0x29d82b4e7862808e!2sEscuela%20Superior%20De%20Administraci%C3%B3n%20P%C3%BAblica%2C%20Calle%202%2C%20C%C3%BAcuta%2C%20Norte%20de%20Santander!3m2!1d7.8996357999999995!2d-72.4892497!5e0!3m2!1ses-419!2sco!4v1575238527904!5m2!1ses-419!2sco"
+                            width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="footer-copyright">
             <div class="container">
-                Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+                Made by <a class="gray-text text-lighten-3" href="https://github.com/JesusRed">Jarv © </a>
+                <a class="grey-text text-lighten-3 right" href="https://instagram.com/?hl=es-la">| Instagram ||</a>
+                <a class="grey-text text-lighten-3 right" href="https://twitter.com">| Twitter |</a>
+                <a class="grey-text text-lighten-3 right" href="https://www.tripadvisor.co/">| TripAdvisor |</a>
+                <a class="grey-text text-lighten-3 right" href="https://www.youtube.com/feed/subscriptions">|| YouTube
+                    |</a>
             </div>
         </div>
     </footer>
