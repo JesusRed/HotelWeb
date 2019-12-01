@@ -1,2 +1,2 @@
 # HotelWeb
-Un front-end que permite adminsitrar un complejo hotelero.
+Un front-end que permite administrar un complejo hotelero.
