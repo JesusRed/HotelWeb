@@ -19,6 +19,7 @@
 </head>
 
 <body>
+
     <!--ENCABEZADO-->
     <header id="cabeza-admin">
         <nav class="indigo darken-4" role="navigation">
@@ -35,65 +36,109 @@
             </div>
         </nav>
     </header>
-
     <!--PANEL DE OPCIONES-->
-    <ul id="sidenav-1" class="sidenav sidenav-fixed indigo darken-3">
+    <ul id="sidenav-1" class="sidenav sidenav-fixed ">
         <li>
-            <div class="user-view">
+            <div class="user-view indigo darken-3">
                 <div class="background">
-                    <img src="images/office.jpg">
+                    <img src="/resources/logo.jpg">
                 </div>
-                <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
-                <a href="#name"><span class="white-text name">John Doe</span></a>
-                <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+                <a href="#user"><img class="circle" src="/resources/logo.jpg"></a>
+                <a href="#name"><span class="white-text name">Empleado Uno</span></a>
+                <a href="#email"><span class="white-text email">empleadouno@jacknana.uk</span></a>
             </div>
         </li>
-        <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-        <li><a href="#!">Second Link</a></li>
+        <li><a class="subheader">Persona</a></li>
+        <li><a class="waves-effect" href="#!"><i class="material-icons">person_add</i>Registrar empleado</a></li>
+        <li><a class="waves-effect" href="#!"><i class="material-icons">person_add</i>Registrar cliente</a></li>
         <li>
             <div class="divider"></div>
         </li>
-        <li><a class="subheader">Subheader</a></li>
-        <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
-        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i
-                    class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a class="subheader">Hotel</a></li>
+        <li><a class="waves-effect" href="#!"><i class="material-icons">hotel</i>Añadir habitación</a></li>
+        <li><a class="waves-effect" href="#!"><i class="material-icons">hotel</i>Añadir hospedaje</a></li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a class="subheader">Otros</a></li>
+        <li><a class="waves-effect" href="#!"><i class="material-icons">receipt</i>Generar Factura</a></li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <br><br>
+        <li><a class="waves-effect red-text" href="#!"><i class="material-icons red-text">exit_to_app</i>Salir</a></li>
 
-        <!-- Dropdown Structure -->
-        <ul id='dropdown1' class='dropdown-content'>
-            <li><a href="#!">one</a></li>
-            <li><a href="#!">two</a></li>
-            <li class="divider" tabindex="-1"></li>
-            <li><a href="#!">three</a></li>
-            <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
-            <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
-        </ul>
-        <ul class="collapsible expandabl">
-            <li>
-                <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
-                <div class="collapsible-body  indigo darken-4">
-                        <p></p>
-                        <a class="waves-effect waves-light btn">button</a>
-                        <br>
-                        <a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>button</a>
-                        <br>
-                        <a class="waves-effect waves-light btn"><i class="material-icons right">cloud</i>button</a>
-                    <span>ghsafwefwaergwre</span>
-                </div>
-
-            </li>
-            <li>
-                <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
-                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-            </li>
-            <li>
-                <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
-                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-            </li>
-        </ul>
     </ul>
-    
 
+    <!--TABLAS Y LISTAS-->
+    <main id="main_admin">
+        <div class="row">
+            <div class="col s12 l6">
+                <h4 class="center-align flow-text">LISTA DE EMPLEADOS</h4>
+                <div class="card">
+                    <table class="striped centered highlight">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Apellido</th>
+                                <th>Cedula</th>
+                                <th>Salario</th>
+                                <th>Tipo</th>
 
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Alvin</td>
+                                <td>Eclair</td>
+                                <td>Alvin</td>
+                                <td>Eclair</td>
+                                <td>Alvin</td>
+                            </tr>
+                            <tr>
+                                <td>Alvin</td>
+                                <td>Eclair</td>
+                                <td>Alvin</td>
+                                <td>Eclair</td>
+                                <td>Alvin</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="col s12 l6">
+                <h4 class="center-align flow-text">LISTA DE SERVICIOS</h4>
+                <div class="card">
+                    <table class="striped centered highlight">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Cedula</th>
+
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Alvin</td>
+                                <td>Eclair</td>
+
+                            </tr>
+                            <tr>
+                                <td>Alan</td>
+                                <td>Jellybean</td>
+
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
 
     <!--PIE DE PAGINA-->
     <footer class="page-footer indigo darken-4" id="pie-admin">
