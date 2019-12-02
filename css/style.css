@@ -57,12 +57,41 @@
 
 /*ADMIN.HTML*/
 
-#cabeza-admin, main, #pie-admin {
+#cabeza-admin, #pie-admin {
 	padding-left: 300px;
 }
 
 @media only screen and (max-width : 992px) {
-	#cabeza-admin, main, #pie-admin {
+	#cabeza-admin,  #pie-admin {
 		padding-left: 0;
 	}
+}
+/*LOGIM.HTML*/
+#body_login {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+#main_login {
+  flex: 1 0 auto;
+}
+
+#body_login {
+  background: #fff;
+}
+
+.input-field input[type=date]:focus+label,
+.input-field input[type=text]:focus+label,
+.input-field input[type=email]:focus+label,
+.input-field input[type=password]:focus+label {
+  color: #e91e63;
+}
+
+.input-field input[type=date]:focus,
+.input-field input[type=text]:focus,
+.input-field input[type=email]:focus,
+.input-field input[type=password]:focus {
+  border-bottom: 2px solid #e91e63;
+  box-shadow: none;
 }
