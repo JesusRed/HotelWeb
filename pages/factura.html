@@ -75,7 +75,7 @@
 
     <!--FORMULARIO-->
     <main id="main_admin">
-        <h4 class="flow-text center">REGISTRAR NUEVO CLIENTE</h4>
+        <h4 class="flow-text center">GENERAR FACTURA</h4>
         <div class="container">
             <div class="z-depth-2 card-panel"
                 style="padding: 32px 48px 0px 48px; border: 1px solid rgb(255, 255, 255);">
@@ -83,28 +83,40 @@
                     <div class="row">
                         <div class="input-field col s12">
                             <i class="material-icons prefix">account_circle</i>
-                            <input name="numdocpersona" type="number" class="validate" required>
-                            <label for="numdocum">Numero de documento</label>
+                            <input name="numfactura" type="text" class="validate" required>
+                            <label for="numfactura">Numero de la factura</label>
                         </div>
                     </div>
                     <div class="row">
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">account_circle</i>
+                                <select name="hospedaje">
+                                    <option value="" disabled selected>Seleccione el metodo de pago</option>
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                    <option value="3">Option 3</option>
+                                </select>
+                                <label>Metodo de pago</label>
+                            </div>
+                        </div>
+                    <div class="row">
                         <div class="input-field col s12">
                             <i class="material-icons prefix">account_circle</i>
-                            <select name="tipodocum">
-                                <option value="" disabled selected>Escoja el tipo</option>
+                            <select name="hospedaje">
+                                <option value="" disabled selected>Seleccione el hospedaje</option>
                                 <option value="1">Option 1</option>
                                 <option value="2">Option 2</option>
                                 <option value="3">Option 3</option>
                             </select>
-                            <label>Tipo de documento</label>
+                            <label>Lista de hospedajes</label>
                         </div>
                     </div>
-
                     <div class="row">
-                        <div class="input-field col s12">
-                            <i class="material-icons prefix">account_circle</i>
-                            <input name="fechareg" type="text" class="datepicker">
-                            <label for="fechareg">Fecha de registro</label>
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix">account_circle</i>
+                                <input name="precio" type="number" class="validate" required>
+                                <label for="precio">Cantidad a pagar</label>
+                            </div>
                         </div>
                     </div>
                     <br>
