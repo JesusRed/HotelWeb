@@ -49,7 +49,8 @@
             </div>
         </li>
         <li><a class="subheader">Persona</a></li>
-        <li><a class="waves-effect" href="addempleado.html"><i class="material-icons">person_add</i>Registrar empleado</a></li>
+        <li><a class="waves-effect" href="addempleado.html"><i class="material-icons">person_add</i>Registrar
+                empleado</a></li>
         <li><a class="waves-effect" href="#!"><i class="material-icons">person_add</i>Registrar cliente</a></li>
         <li>
             <div class="divider"></div>
@@ -72,112 +73,74 @@
 
     <!--TABLAS Y LISTAS-->
     <main id="main_admin">
-        <div class="row">
-            <div class="col s12 l6">
-                <h4 class="center-align flow-text">LISTA DE EMPLEADOS</h4>
-                <div class="card">
-                    <table class="striped centered highlight">
-                        <thead>
-                            <tr>
-                                <th>Nombre</th>
-                                <th>Apellido</th>
-                                <th>Cedula</th>
-                                <th>Salario</th>
-                                <th>Tipo</th>
-
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                            <tr>
-                                <td>Alvin</td>
-                                <td>Eclair</td>
-                                <td>Alvin</td>
-                                <td>Eclair</td>
-                                <td>Alvin</td>
-                            </tr>
-                            <tr>
-                                <td>Alvin</td>
-                                <td>Eclair</td>
-                                <td>Alvin</td>
-                                <td>Eclair</td>
-                                <td>Alvin</td>
-                            </tr>
-
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <div class="divider"></div>
-            <div class="col s12 l6">
-                <h4 class="center-align flow-text">LISTA DE SERVICIOS</h4>
-                <div class="card">
-                    <table class="striped centered highlight">
-                        <thead>
-                            <tr>
-                                <th>Nombre</th>
-                                <th>Cedula</th>
-
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                            <tr>
-                                <td>Alvin</td>
-                                <td>Eclair</td>
-
-                            </tr>
-                            <tr>
-                                <td>Alan</td>
-                                <td>Jellybean</td>
-
-                            </tr>
-
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-        <div class="divider">
-
-        </div>
-        <div class="row">
-            <div class="col s12 l12">
-                    <h4 class="center-align flow-text">LISTA DE X COSA</h4>
-                    <div class="card">
-                        <table class="striped centered highlight">
-                            <thead>
-                                <tr>
-                                    <th>Nombre</th>
-                                    <th>Apellido</th>
-                                    <th>Cedula</th>
-                                    <th>Salario</th>
-                                    <th>Tipo</th>
-    
-                                </tr>
-                            </thead>
-    
-                            <tbody>
-                                <tr>
-                                    <td>Alvin</td>
-                                    <td>Eclair</td>
-                                    <td>Alvin</td>
-                                    <td>Eclair</td>
-                                    <td>Alvin</td>
-                                </tr>
-                                <tr>
-                                    <td>Alvin</td>
-                                    <td>Eclair</td>
-                                    <td>Alvin</td>
-                                    <td>Eclair</td>
-                                    <td>Alvin</td>
-                                </tr>
-    
-                            </tbody>
-                        </table>
+        <h4 class="flow-text center">REGISTRAR NUEVO EMPLEADO</h4>
+        <div class="container">
+            <div class="z-depth-2 card-panel"
+                style="padding: 32px 48px 0px 48px; border: 1px solid rgb(255, 255, 255);">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input name="numdocpersona" id="first_name" type="number" class="validate" required>
+                            <label for="first_name">Numero de documento</label>
+                        </div>
                     </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">account_circle</i>
+                            <select name="tipodocum">
+                                <option value="" disabled selected>Escoja el tipo</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select>
+                            <label>Tipo de documento</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">account_circle</i>
+                            <select name="tipoemple">
+                                <option value="" disabled selected>Escoja el tipo</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select>
+                            <label>Tipo de empleado</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input name="contrasena" type="password" class="validate" required>
+                            <label for="contrasena">Password</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input name="fechaini" type="text" class="datepicker">
+                            <label for="fechaini">Fecha de inicio</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input name="fechafin" type="text" class="datepicker">
+                            <label for="fechafin">Fecha de terminacion</label>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row center">
+                        <button class="btn waves-effect waves-light indigo darken-4 " type="submit" name="action">agregar
+                            <i class="material-icons right">send</i>
+                        </button>
+                    </div>
+                </form>
             </div>
+
         </div>
+
     </main>
 
     <!--PIE DE PAGINA-->
@@ -196,7 +159,6 @@
             </div>
         </div>
     </footer>
-
 
     <!--JQUERY-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

@@ -1,5 +1,6 @@
 $(document).ready(function(){
-
+    $('.datepicker').datepicker({format:'dd/mm/yyyy'});
+    $('select').formSelect();
     $('.dropdown-trigger').dropdown();
     $('.sidenav').sidenav();
     $('#sidenav-1').sidenav({ edge: 'left' });
