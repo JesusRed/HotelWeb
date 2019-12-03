@@ -79,7 +79,7 @@
         <div class="container">
             <div class="z-depth-2 card-panel"
                 style="padding: 32px 48px 0px 48px; border: 1px solid rgb(255, 255, 255);">
-                <form class="col s12">
+                <form class="col s12" id="target">
                     <div class="row">
                         <div class="input-field col s12">
                             <i class="material-icons prefix">account_circle</i>
@@ -88,17 +88,17 @@
                         </div>
                     </div>
                     <div class="row">
-                            <div class="input-field col s12">
-                                <i class="material-icons prefix">account_circle</i>
-                                <select name="hospedaje">
-                                    <option value="" disabled selected>Seleccione el metodo de pago</option>
-                                    <option value="1">Option 1</option>
-                                    <option value="2">Option 2</option>
-                                    <option value="3">Option 3</option>
-                                </select>
-                                <label>Metodo de pago</label>
-                            </div>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">account_circle</i>
+                            <select name="hospedaje">
+                                <option value="" disabled selected>Seleccione el metodo de pago</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select>
+                            <label>Metodo de pago</label>
                         </div>
+                    </div>
                     <div class="row">
                         <div class="input-field col s12">
                             <i class="material-icons prefix">account_circle</i>
@@ -112,26 +112,50 @@
                         </div>
                     </div>
                     <div class="row">
-                            <div class="input-field col s12">
-                                <i class="material-icons prefix">account_circle</i>
-                                <input name="precio" type="number" class="validate" required>
-                                <label for="precio">Cantidad a pagar</label>
-                            </div>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input name="precio" type="number" class="validate" required>
+                            <label for="precio">Cantidad a pagar</label>
                         </div>
                     </div>
-                    <br>
-                    <div class="row center">
-                        <button class="btn waves-effect waves-light indigo darken-4 " type="submit"
-                            name="action">agregar
-                            <i class="material-icons right">send</i>
-                        </button>
-                    </div>
-                </form>
             </div>
+            <br>
+            <div class="row center">
+                <button class="btn waves-effect waves-light indigo darken-4 " type="submit" name="action">agregar
+                    <i class="material-icons right">send</i>
+                </button>
+                <button id="cmd" class="btn waves-effect waves-light indigo darken-4 ">imprimir
+                    <i class="material-icons left">picture_as_pdf</i>
+                </button>
+            </div>
+
+            </form>
+        </div>
 
         </div>
 
     </main>
+
+    <script>
+        $(document).ready(function () {
+
+            var doc = new jsPDF();
+            var specialElementHandlers = {
+                '#editor': function (element, renderer) {
+                    return true;
+                }
+            };
+
+            $('#cmd').click(function () {
+                doc.fromHTML($('form').html(), 15, 15, {
+                    'width': 170,
+                    'elementHandlers': specialElementHandlers
+                });
+                doc.save('sample.pdf');
+            });
+
+        }); 
+    </script>
 
     <!--PIE DE PAGINA-->
     <footer class="page-footer indigo darken-4" id="pie-admin">
@@ -152,6 +176,11 @@
 
     <!--JQUERY-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--PDF-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js"
+        integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/"
+        crossorigin="anonymous"></script>
+
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <!--NUESTRO JS-->
