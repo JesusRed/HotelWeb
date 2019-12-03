@@ -150,3 +150,20 @@
  .input-field textarea.valid:focus~.helper-text::after {
      color: #1a237e ;
  }
+
+ .dropdown-content li>a, .dropdown-content li>span{
+   color: #1a237e;
+ }
+
+ .datepicker-date-display{
+   background-color: #1a237e;
+ }
+
+ .datepicker-cancel, .datepicker-clear, .datepicker-today, .datepicker-done{
+   color: #1a237e;
+ }
+
+ .datepicker-table td.is-selected{
+   color: white;
+   background-color: #1a237e;
+ }
