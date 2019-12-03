@@ -51,7 +51,8 @@
         <li><a class="subheader">Persona</a></li>
         <li><a class="waves-effect" href="addempleado.html"><i class="material-icons">person_add</i>Registrar
                 empleado</a></li>
-        <li><a class="waves-effect" href="addcliente.html"><i class="material-icons">person_add</i>Registrar cliente</a></li>
+        <li><a class="waves-effect" href="addcliente.html"><i class="material-icons">person_add</i>Registrar cliente</a>
+        </li>
         <li>
             <div class="divider"></div>
         </li>
@@ -73,7 +74,7 @@
 
     <!--FORMULARIO-->
     <main id="main_admin">
-        <h4 class="flow-text center">REGISTRAR NUEVO CLIENTE</h4>
+        <h4 class="flow-text center">REGISTRAR NUEVO HOSPEDAJE</h4>
         <div class="container">
             <div class="z-depth-2 card-panel"
                 style="padding: 32px 48px 0px 48px; border: 1px solid rgb(255, 255, 255);">
@@ -81,33 +82,52 @@
                     <div class="row">
                         <div class="input-field col s12">
                             <i class="material-icons prefix">account_circle</i>
-                            <input name="numdocpersona"  type="number" class="validate" required>
-                            <label for="numdocum">Numero de documento</label>
+                            <input name="idhosped" type="text" class="validate" required>
+                            <label for="idhosped">Codigo del hospedaje</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col s12">
                             <i class="material-icons prefix">account_circle</i>
-                            <select name="tipodocum">
-                                <option value="" disabled selected>Escoja el tipo</option>
+                            <select name="cliente">
+                                <option value="" disabled selected>Escoja el cliente</option>
                                 <option value="1">Option 1</option>
                                 <option value="2">Option 2</option>
                                 <option value="3">Option 3</option>
                             </select>
-                            <label>Tipo de documento</label>
+                            <label>Lista de clientes</label>
                         </div>
                     </div>
-                    
                     <div class="row">
                         <div class="input-field col s12">
                             <i class="material-icons prefix">account_circle</i>
-                            <input name="fechareg" type="text" class="datepicker">
-                            <label for="fechareg">Fecha de registro</label>
+                            <select name="estadohabi">
+                                <option value="" disabled selected>Escoja la habitacion</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select>
+                            <label>Listado de habitaciones</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input name="fechaini" type="text" class="datepicker">
+                            <label for="fechafin">Fecha de llegada</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input name="fechafin" type="text" class="datepicker">
+                            <label for="fechafin">Fecha de salida</label>
                         </div>
                     </div>
                     <br>
                     <div class="row center">
-                        <button class="btn waves-effect waves-light indigo darken-4 " type="submit" name="action">agregar
+                        <button class="btn waves-effect waves-light indigo darken-4 " type="submit"
+                            name="action">agregar
                             <i class="material-icons right">send</i>
                         </button>
                     </div>
